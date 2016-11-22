@@ -5,8 +5,7 @@ import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  // { path: '', redirectTo: '/recipes', pathMatch: 'full' },
-  { path: '', component: RecipesComponent, children: RECIPE_ROUTES },
+  { path: '', redirectTo: '/recipes', pathMatch: 'full' },
   { path: 'recipes', component: RecipesComponent, children: RECIPE_ROUTES },
   { path: 'shopping-list', component: ShoppingListComponent }
 ];
